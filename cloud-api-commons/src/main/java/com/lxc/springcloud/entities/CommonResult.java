@@ -18,4 +18,8 @@ public class CommonResult<T> {
     public CommonResult(Integer code, String message){
         this(code,message,null);
     }
+
+    public CommonResult(T data){
+        this(null,null,data);
+    }
 }
